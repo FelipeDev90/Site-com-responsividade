@@ -59,6 +59,7 @@ header {
     flex-direction: column; /*Empilha h1 e p na vertical*/
     justify-content: center; /*Centraliza verticalmente*/
     align-items: center; /*Centraliza horizontalmente*/
+    flex-wrap: wrap;
     height: 100vh; /*Ocupa a tela inteira*/
     text-align: center;
     background-image: url('imagens/wallpaper004.jpg');
