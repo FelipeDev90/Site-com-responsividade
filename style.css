@@ -71,7 +71,7 @@ header {
 
 h1 {
     font-family: var(--font2);
-    font-size: 8em;
+    font-size: 7em;
     font-weight: bolder;
     text-shadow: 0.2px 0.2px 2px var(--cor6);
     margin: 0;
@@ -84,7 +84,7 @@ header > p {
     text-shadow: 0.2px 0.2px 2px var(--cor3);
 }
 
-nav{
+nav {
     position: sticky;
     top: 0;
     background-color: var(--cor2);
@@ -123,8 +123,8 @@ main {
     background-image: url('imagens/wallpaper006.jpg');
     background-position: top center;
     background-size: cover;
+    padding-top: 20px;
 }
-
 
 #home > h2 {
     display: flex;
@@ -161,7 +161,62 @@ main {
     text-align: justify;
     text-indent: 60px;
     line-height: 1.5em;
-    padding-bottom: 30px;
+
+}
+
+.container-sobrenos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+    box-sizing: border-box ;
+}
+
+.texto-sobrenos {
+    flex: 1 1 500px;
+    font-family: var(--font3);
+    font-size: 1.2em;
+    text-align: justify;
+    line-height: 1.6;
+    padding: 10px;
+}
+
+.imagem-sobrenos {
+    max-width: 100%;
+    height: auto;
+    border-radius: 100px;
+    flex: 1 1 400px;
+}
+
+#imgSobreNos {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 100px;
+}
+
+#sobreNos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.imagem-sobrenos {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+}
+
+#imgSobreNos {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
 #sobreNos h2,
@@ -174,7 +229,7 @@ main {
     font-family: var(--font4);
     font-size: 2em;
     text-shadow: 0.2px 0.2px 2px var(--cor4); 
-    padding-top: 50px; 
+    padding: 50px 0 10px 0; 
 }
 
 hr {
@@ -182,7 +237,7 @@ hr {
     background: linear-gradient(to right, var(--cor2), var(--cor6));
     border: none;
     width: 80%;
-    margin: 4em auto;
+    margin: 3.5em auto;
     border-radius: 10px;
 }
 
@@ -208,7 +263,7 @@ hr {
     display: flex;
     justify-content: center;
     text-align: center;
-    text-indent: 60px;
+
     line-height: 1.5em;
     padding-bottom: 30px;
 }
@@ -220,22 +275,39 @@ hr {
     text-decoration: underline;
     display: flex;
     justify-content: center;
+
 }
 
-ul.list-custom li{
+ul.list-custom {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5em;
+    padding: 2em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+ul.list-custom li {
+    background-image: url('imagens/wallpaper006.jpg');
+    background-position: bottom;
+    background-size: cover; 
+
     list-style: none;
-}
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 1.5em;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 
-#servicos > ul li {
     font-family: var(--font3);
     color: var(--cor1);
-    font-size: 1.2em;
-    display: block;
-    justify-content: center;
-    text-align: justify;
-    text-indent: 60px;
-    line-height: 1.5em;
-    font-weight: bold;
+    text-align: center;
+    font-size: 1em;
+    gap: 1em;
 }
 
 #container-depoimento {
@@ -266,7 +338,7 @@ ul.list-custom li{
 }
 
 .depoimento:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     box-shadow: 0 4px 40px rgba(0, 0, 0, 0.3);
 }
 
@@ -438,4 +510,81 @@ footer{
     transform: scale(1.2);
     color: var(--cor4);
     text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3em;
+    padding: 0 10px;
+    word-break: break-word;
+  }
+
+  header > p {
+    font-size: 1em;
+    padding: 0 10px;
+  }
+
+  nav {
+    font-size: 1em;
+    gap: 1em;
+    padding: 0.5em;
+  }
+
+  #home p,
+  #servicos p,
+  #servicos > ul li,
+  #container-home p {
+    padding: 20px;
+    font-size: 1em;
+    text-indent: 30px;
+  }
+
+  .container-sobrenos {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .texto-sobrenos {
+    text-indent: 0;
+    font-size: 1em;
+  }
+
+  .imagem-sobrenos {
+    width: 90%;
+  }
+
+  #servicos h3 {
+    font-size: 1.2em;
+  }
+
+  .container-contato {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form,
+  .endereco {
+    max-width: 90%;
+    text-align: center;
+  }
+
+  #nome, #email, #mensagem {
+    width: 100%;
+  }
+
+  .container-footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .redes {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .redes a {
+    font-size: 28px;
+  }
 }
