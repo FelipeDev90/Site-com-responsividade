@@ -50,8 +50,9 @@
   --font4: "Savate", cursive;
 }
 
-html {
+html, body {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 header {
@@ -501,6 +502,10 @@ footer {
 }
 
 @media (max-width: 768px) {
+  body, html {
+    overflow-x: hidden;
+  }
+
   h1 {
     font-size: 3em;
     padding: 0 10px;
