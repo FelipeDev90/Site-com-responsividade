@@ -74,6 +74,7 @@ h1 {
     font-weight: bolder;
     text-shadow: 0.2px 0.2px 2px var(--cor6);
     margin: 0;
+    max-width: 100%;
 }
 
 header > p {
@@ -188,10 +189,9 @@ hr {
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-image: url('imagens/wallpaper007.jpg');
-    background-position: top top;
-    background-repeat: repeat;
-    background-size: auto;
+    background-image: url('imagens/wallpaper004.jpg');
+    background-position: left right;
+    background-size: cover;
     max-width: 98%;
     margin: auto;
     border-radius: 5px;
@@ -292,9 +292,12 @@ cite {
 
 .container-contato {
     display: flex;
-    justify-content: space-evenly;
-    gap: 80px;
-    padding-bottom: 10px;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    gap: 20px;
+    padding: 10px;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .endereco h3{
@@ -304,24 +307,46 @@ cite {
 .endereco {
     font-family: var(--font3);
     font-size: 1.2em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
     align-content: center;
-    align-items: left;
+    align-items: center;
+    flex: 1 1 300px;
+    max-width: 500px;
 }
 
 .form {
     font-family: var(--font3);
-    align-content: center;
     font-weight: bold;
+    flex: 1 1 300px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8px; /* controla o espaço entre os elementos */
+    padding: 10px;
 }
 
-#nome, #email {
-    width: 300px;
+label {
+    margin-bottom: 0;
+    font-weight: bold;
+    display: block;
+}
+
+input, textarea {
+    margin-bottom: 12px; /* controla o espaço abaixo de cada campo */
+}
+
+#nome, #email, #mensagem {
+    width: 80%; /* ocupa toda a largura do form */
+    max-width: 350px;
     font-size: 1rem;
-    font-family: var(--font3);
+    padding: 6px;
     border: 1px solid black;
     border-radius: 5px;
     box-shadow: 0.2px 0.2px 2px black;
-    padding: 2px;
+    font-family: var(--font3);
 }
 
 #nome:hover, #email:hover, #mensagem:hover {
@@ -330,28 +355,15 @@ cite {
     outline: none;
 }
 
-#mensagem {
-    font-family: var(--font3);
-    font-size: 1rem;
-    padding: 2px;
-    width: 300px;
-    height: 150px;
-    border: 1px solid black;
-    border-radius: 5px;
-    box-shadow: 0.2px 0.2px 2px black;
-}
-
-button {
-    padding: 6px;
-    background-color: var(--cor1);
-    color: var(--cor7);
+button[type="submit"] {
+    width: fit-content;
+    padding: 8px 16px;
+    margin-top: 1px;
+    background-color: var(--cor2);
+    color: white;
     border: none;
-    border-radius: 6px;
-    font-size: 1rem;
-    font-weight: bold;
+    border-radius: 5px;
     cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 button:hover {
@@ -369,22 +381,37 @@ button:focus {
 
 footer{
     width: 100%;
-    height: 100px;
     background-image: linear-gradient(to top, var(--cor1), var(--cor7));
     font-family: var(--font3);
     color: black;
     font-size: 1.2em;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 10px 20px;
 
 }
 
 .container-footer {
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 20px;
     display: flex;
-    justify-content:space-between;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    gap: 80px;
-    padding-bottom: 10px;
+    gap: 40px;
+}
+
+.redes {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
 }
 
 .redes a {
@@ -403,7 +430,7 @@ footer{
 .politicaTermos a {
     text-decoration: none;
     color: black;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .politicaTermos a:hover {
