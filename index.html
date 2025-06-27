@@ -8,38 +8,42 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon" />
     <title>Agência Criativa Web</title>
   </head>
   <body>
-    <header id="topo">
-      <h1>Criativa web</h1>
-      <p>Transformamos ideias em experiências digitais.</p>
-    </header>
 
-    <nav>
-      <a href="#home">HOME</a>
-      <a href="#sobreNos">SOBRE NÓS</a>
-      <a href="#servicos">SERVIÇOS</a>
-      <a href="#depoimentos">DEPOIMENTOS</a>
-      <a href="#contato">CONTATO</a>
-    </nav>
+      <header class="header" id="topo">
+        <div class="header__container">
+          <h1 class="header__title">Criativa web</h1>
+          <p class="header__subtitle">Transformamos ideias em experiências digitais.</p>
+        </div>
+          <nav class="nav">
+            <ul class="nav__lista">
+              <li class="nav__item"><a href="#home" class="nav__link">HOME</a></li>
+              <li class="nav__item"><a href="#sobreNos" class="nav__link">SOBRE NÓS</a></li>
+              <li class="nav__item"><a href="#servicos" class="nav__link">SERVIÇOS</a></li>
+              <li class="nav__item"><a href="#depoimentos" class="nav__link">DEPOIMENTOS</a></li>
+              <li class="nav__item"><a href="#contato" class="nav__link">CONTATO</a></li>
+            </ul>
+          </nav>
+      </header>
 
     <main>
-      <div id="container-home">
-        <section id="home">
-          <h2 class="titulo-secao">Bem-vindo à Criativa Web</h2>
-          <p>
-            Mais do que sites, entregamos valor, confiabilidade e inovação em
-            cada linha de código.
-          </p>
+        <section class="home" id="home">
+          <div class="home__container">
+            <h2 class="section__title">Bem-vindo à Criativa Web</h2>
+            <p class="home__subtitle">
+              Mais do que sites, entregamos valor, confiabilidade e inovação em
+              cada linha de código.
+            </p>
+          </div>  
         </section>
 
-        <section id="sobreNos">
-          <div class="container-sobrenos">
-            <div class="texto-sobrenos">
-              <br />
-              <p>
+        <section class="sobrenos" id="sobrenos">
+          <div class="sobrenos__container">
+              <h2 class="section__title">Sobre nós</h2>
+              <p class="section__p">
                 A Agência Criativa Web é especializada no desenvolvimento de
                 sites profissionais, modernos e estrategicamente pensados para
                 impulsionar marcas no ambiente digital. Com uma equipe
@@ -52,9 +56,8 @@
                 resultados reais, fortalecendo a presença online de empresas que
                 buscam se destacar no mercado.
               </p>
-            </div>
 
-            <picture class="imagem-sobrenos">
+            <picture class="sobrenos__picture">
               <source
                 media="(max-width: 480px)"
                 srcset="imagens/sobrenos_480px.webp"
@@ -67,200 +70,194 @@
               <img
                 src="imagens/sobrenos_800px.webp"
                 alt="Developer_img"
-                id="imgSobreNos"
+                class="sobrenos__imagem"
               />
             </picture>
           </div>
         </section>
-      </div>
+ 
+      <hr class="section__hr" />
 
-      <hr />
+      <section class="servicos" id="servicos">
+        <div class="servicos__container">
+          <h2 class="section__title">Serviços</h2>
 
-      <section id="servicos">
-        <div id="container-servicos">
-          <h2 class="titulo-secao">Serviços</h2>
-
-          <p>
+          <p class="section__p">
             Na Agência Criativa Web, desenvolvemos soluções digitais completas
             para posicionar sua marca com força e personalidade no ambiente
-            online. <br />
+            online.
             Combinamos criatividade e estratégia para oferecer serviços que vão
             além do visual — entregamos resultados.
           </p>
-          <ul class="list-custom">
+          <ul class="servicos__lista">
             <li>
-              <h3>Desenvolvimento Web</h3>
-              <p>
+              <h3 class="servicos__subtitle">Desenvolvimento Web</h3>
+              <p class="section__p">
                 Criação de sites responsivos, personalizados e otimizados para
                 desempenho e SEO.
               </p>
-              <br />
             </li>
 
             <li>
-              <h3>Design Gráfico</h3>
-              <p>
+              <h3 class="servicos__subtitle">Design Gráfico</h3>
+              <p class="section__p">
                 Identidade visual, layouts modernos, banners, redes sociais e
                 muito mais.
               </p>
-              <br />
             </li>
 
             <li>
-              <h3>Branding</h3>
-              <p>
+              <h3 class="servicos__subtitle">Branding</h3>
+              <p class="section__p">
                 Construção e fortalecimento da marca, desde o naming até o
                 posicionamento estratégico.
               </p>
-              <br />
             </li>
 
             <li>
-              <h3>UI/UX Design</h3>
-              <p>
+              <h3 class="servicos__subtitle">UI/UX Design</h3>
+              <p class="section__p">
                 Experiências digitais pensadas para o usuário, com foco em
                 usabilidade e conversão.
               </p>
-              <br />
             </li>
 
             <li>
-              <h3>Manutenção e Suporte</h3>
-              <p>
+              <h3 class="servicos__subtitle">Manutenção e Suporte</h3>
+              <p class="section__p">
                 Atualização, segurança e suporte técnico contínuo para seu site
                 estar sempre no ar.
               </p>
-              <br />
             </li>
 
             <li>
-              <h3>Consultoria Digital</h3>
-              <p>
+              <h3 class="servicos__subtitle">Consultoria Digital</h3>
+              <p class="section__p">
                 Estratégias para transformar sua presença online em resultados
                 reais.
               </p>
-              <br />
             </li>
             <li>
-              <h3>Marketing Digital</h3>
-              <p>
+              <h3 class="servicos__subtitle">Marketing Digital</h3>
+              <p class="section__p">
                 Planejamento e execução de estratégias de marketing online para
                 atrair, engajar e converter clientes através de SEO, anúncios e
                 redes sociais.
               </p>
-              <br />
             </li>
             <li>
-              <h3>Loja Virtual (E-commerce)</h3>
-              <p>
+              <h3 class="servicos__subtitle">Loja Virtual (E-commerce)</h3>
+              <p class="section__p">
                 Criação de lojas online completas, seguras e otimizadas para
                 vendas, com integração de pagamento, gestão de produtos e
                 responsividade total.
               </p>
-              <br />
             </li>
           </ul>
         </div>
       </section>
 
-      <section id="depoimentos">
-        <h2 class="titulo-secao">Depoimentos</h2>
-        <div id="container-depoimento">
-          <div class="depoimento">
+      <section class="depoimentos" id="depoimentos">
+        <div id="depoimento__container">
+          <h2 class="section__title">Depoimentos</h2>
+
             <blockquote>
-              <p>
+              <p class="section__p">
                 "A Criativa Web superou todas as minhas expectativas! O site da
                 minha loja ficou lindo, rápido e fácil de usar. Eles entenderam
                 exatamente o que eu queria e ainda trouxeram ideias incríveis
                 que fizeram toda a diferença."
               </p>
-              <cite>Camila Rocha — Fundadora da Loja Essencial</cite>
+              <cite class="cite__cliente">Camila Rocha — Fundadora da Loja Essencial</cite>
             </blockquote>
-          </div>
-          <div class="depoimento">
+
             <blockquote>
-              <p>
+              <p class="section__p">
                 "Profissionais comprometidos, criativos e com visão estratégica.
                 A identidade visual criada para nossa startup foi essencial para
                 nos posicionarmos no mercado. Recomendo sem pensar duas vezes!"
               </p>
-              <cite>Marcos Tavares — Diretor de Marketing na StartUpHub</cite>
+              <cite class="cite__cliente">Marcos Tavares — Diretor de Marketing na StartUpHub</cite>
             </blockquote>
-          </div>
-          <div class="depoimento">
+
             <blockquote>
-              <p>
+              <p class="section__p">
                 "Eu não entendia nada de internet e estava insegura, mas a
                 equipe da Criativa Web me acompanhou em cada etapa. Hoje tenho
                 um site que transmite confiança e atrai mais pacientes. Sou
                 muito grata!"
               </p>
-              <cite>Renata Alves — Psicóloga Clínica</cite>
+              <cite class="cite__cliente">Renata Alves — Psicóloga Clínica</cite>
             </blockquote>
-          </div>
         </div>
       </section>
-      <hr />
-      <section id="contato">
-        <h2 class="titulo-secao">Contato</h2>
-        <div class="container-contato">
-          <div class="endereco">
-            <h3>Fale com a gente</h3>
-            <p>
-              <strong>Endereço:</strong> Rua das Ideias, 123 - São Paulo, SP
-            </p>
-            <p><strong>Telefone:</strong> (11) 01234-5678</p>
-            <p><strong>E-mail:</strong> contato@criativaweb.com.br</p>
-          </div>
-          <form action="#" method="post" id="formulario" class="form">
-            <h3>Envie uma mensagem</h3>
 
-            <label for="nome">* Nome:</label>
-            <input type="text" id="nome" name="nome" required />
+      <hr class="section__hr"/>
 
-            <label for="email">* E-mail:</label>
-            <input type="email" id="email" name="email" required />
+      <section class="contato" id="contato">
+        <div class="contato__container">
+          <h2 class="section__title">Contato</h2>
+            <div class="contato__endereco">
+              <h3 class="contato__subtitle">Fale com a gente</h3>
+              <p class="section__p"><strong>Endereço:</strong> Rua das Ideias, 123 - São Paulo, SP</p>
+              <p class="section__p"><strong>Telefone:</strong> (11) 01234-5678</p>
+              <p class="section__p"><strong>E-mail:</strong> contato@criativaweb.com.br</p>
+            </div>
 
-            <label for="mensagem">Mensagem:</label>
-            <textarea
-              name="mensagem"
-              id="mensagem"
-              rows="5"
-              required
-            ></textarea>
+          <form action="#" method="post" id="formulario" class="contato__formulario">
+            <h3 class="contato__subtitle">Envie uma mensagem</h3>
 
-            <button type="submit">Enviar</button>
+            <div class="contato__campo">
+              <label class="contato__label" for="nome">* Nome:</label>
+              <input class="contato__input" type="text" id="nome" name="nome" required />
+            </div>
+
+            <div class="contato__campo">
+              <label class="contato__label" for="email" class="contato__label">* E-mail:</label>
+              <input class="contato__input"type="email" id="email" name="email" required />
+            </div>
+
+            <div class="contato__campo">
+              <label class="contato__label" for="mensagem">Mensagem:</label>
+              <textarea
+                name="mensagem"
+                id="mensagem"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="contato__botao">Enviar</button>
           </form>
         </div>
       </section>
     </main>
+
     <footer>
-      <div class="container-footer">
-        <div class="direitos">
-          <p>
-            &copy; 2025 Criativa Web. <br />
-            Todos os direitos reservados. <br />
-            Projeto criado e desenvolvido por Felipe Silva.
-          </p>
-        </div>
-        <div class="redes">
-          <p>Siga a gente:</p>
-          <a href="https://www.instagram.com" target="_blank">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="https://www.linkedin.com" target="_blank">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="https://www.facebook.com" target="_blank">
-            <i class="fab fa-facebook"></i>
-          </a>
-        </div>
-        <div class="politicaTermos">
-          <p>
-            <a href="#">Política de Privacidade</a> |
-            <a href="#">Termos de uso</a>
-          </p>
-        </div>
+      <div class="footer__container">
+          <div class="footer__direitos">
+            <p class="footer__p">
+              &copy; 2025 Criativa Web. <br />
+              Todos os direitos reservados. <br />
+              Projeto criado e desenvolvido por Felipe Silva.
+            </p>
+          </div>
+          <div class="footer__linksredes">
+            <p>Siga a gente:</p>
+            <a href="https://www.instagram.com" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </div>
+          <div class="footer__politicaTermos">
+              <a href="#" class="footer__link">Política de Privacidade</a> |
+              <a href="#" class="footer__link">Termos de uso</a>
+          </div>
       </div>
     </footer>
   </body>
