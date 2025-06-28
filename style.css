@@ -1,7 +1,129 @@
 @charset "UTF-8";
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+@font-face {
+  font-family: "LeagueScript";
+  src: url("font/LeagueScript-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Megrin";
+  src: url("font/Megrim-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RobotoCondensed";
+  src: url("font/RobotoCondensed-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Savate";
+  src: url("font/Savate-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --cor0: transparent;
+  --cor1: #2b3033;
+  --cor2: #354750;
+  --cor3: #3d657a;
+  --cor4: #377ea5;
+  --cor5: #2393cf;
+  --cor6: #00a4fa;
+  --cor7: #fff;
+  --fontPadrao: arial, verdana, helvetica, sans-serif;
+  --font1: "Megrin", cursive;
+  --font2: "LeagueScript", cursive;
+  --font3: "RobotoCondensed", cursive;
+  --font4: "Savate", cursive;
+  --sombra1: 0.2px 0.2px 2px var(--cor6);
+  --sombra2: 0.2px 0.2px 2px var(--cor3);
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  /*overflow-x: hidden;*/
+}
+
+.header__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  background-image: url("imagens/wallpaper1.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.header__title {
+  font-family: var(--font1);
+  font-size: 7.5em;
+  font-weight: bold;
+  text-shadow: var(--sombra1);
+  max-width: 100%;
+}
+
+.header__subtitle {
+  font-family: var(--font3);
+  font-size: 1.5em;
+  text-shadow: var(--sombra2);
+}
+
+.nav__container {
+  background-color: var(--cor2);
+  font-family: var(--font1);
+  font-size: 1.3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  padding: 0.5rem 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav__lista {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.nav__item {
+  text-decoration: none;
+  list-style: none;
+  padding-left: 2em;
+}
+
+.nav__link {
+  color: var(--cor7);
+  text-decoration: none;
+  padding: 0.25em;
+  border-radius: 8px;
+  transition: all 0.5s ease;
+}
+
+.nav__link:hover {
+  background-color: var(--cor7);
+  color: var(--cor2);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
