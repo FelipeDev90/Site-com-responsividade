@@ -267,7 +267,7 @@ body {
   background: url("imagens/wallpaper1.jpg");
   background-size: auto;
   background-position: center;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
 }
 
 .blockquote__container {
@@ -423,4 +423,23 @@ button:focus {
 
 .footer__link:hover {
   color: var(--cor4);
+}
+
+@media (max-widht: 768px) {
+  .header__title {
+    font-size: 3em;
+  }
+  .nav__item {
+  padding-left: 1em;
+  }
+
+  .sobrenos__imgcontainer {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .sobrenos__p {
+    flex: 1 1 250px;
+    padding: 0 10px;
+  }
 }
