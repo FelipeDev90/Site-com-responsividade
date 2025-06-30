@@ -265,9 +265,10 @@ body {
   flex-wrap: wrap;
   padding-bottom: 10px;
   background: url("imagens/wallpaper1.jpg");
-  background-size: auto;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  min-height: 100%;
 }
 
 .blockquote__container {
@@ -425,12 +426,12 @@ button:focus {
   color: var(--cor4);
 }
 
-@media (max-widht: 768px) {
+@media (max-width: 768px) {
   .header__title {
     font-size: 3em;
   }
   .nav__item {
-  padding-left: 1em;
+    padding-left: 1em;
   }
 
   .sobrenos__imgcontainer {
@@ -440,6 +441,7 @@ button:focus {
 
   .sobrenos__p {
     flex: 1 1 250px;
+    width: 100%;
     padding: 0 10px;
   }
 }
