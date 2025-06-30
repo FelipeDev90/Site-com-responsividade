@@ -426,10 +426,35 @@ button:focus {
   color: var(--cor4);
 }
 
+@media (max-width: 480px) {
+  .header__title {
+    font-size: 2.2em;
+  }
+
+  .section__title {
+    font-size: 1.8em;
+  }
+
+  .sobrenos__p {
+    font-size: 1em;
+    padding: 0 10px;
+  }
+
+  .nav__item {
+    padding-left: 0.5em;
+    font-size: 0.9em;
+  }
+
+  .servicos__lista {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 768px) {
   .header__title {
     font-size: 3em;
   }
+
   .nav__item {
     padding-left: 1em;
   }
@@ -443,5 +468,32 @@ button:focus {
     flex: 1 1 250px;
     width: 100%;
     padding: 0 10px;
+  }
+
+  .section__title {
+    font-size: 2.2em;
+  }
+
+  .depoimentos__blockquote {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header__title {
+    font-size: 4.5em;
+  }
+
+  .section__title {
+    font-size: 2.8em;
+  }
+
+  .servicos__lista {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .footer__container {
+    flex-direction: column;
+    text-align: center;
   }
 }
