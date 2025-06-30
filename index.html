@@ -164,34 +164,35 @@
         <div class="depoimentos__container">
           <h2 class="section__title">Depoimentos</h2>
 
-            <blockquote class="depoimentos__blockquote">
-              <p class="depoimentos__p">
-                "A Criativa Web superou todas as minhas expectativas! O site da
-                minha loja ficou lindo, rápido e fácil de usar. Eles entenderam
-                exatamente o que eu queria e ainda trouxeram ideias incríveis
-                que fizeram toda a diferença."
-              </p>
-              <cite class="cite__cliente"><strong>Camila Rocha — Fundadora da Loja Essencial</strong></cite>
-            </blockquote>
+            <div class="blockquote__container">
+              <blockquote class="depoimentos__blockquote">
+                <p class="depoimentos__p">
+                  "A Criativa Web superou todas as minhas expectativas! O site da
+                  minha loja ficou lindo, rápido e fácil de usar. Eles entenderam
+                  exatamente o que eu queria e ainda trouxeram ideias incríveis
+                  que fizeram toda a diferença."
+                </p>
+                <cite class="cite__cliente"><strong>Camila Rocha — Fundadora da Loja Essencial</strong></cite>
+              </blockquote>
+              <blockquote class="depoimentos__blockquote">
+                <p class="depoimentos__p">
+                  "Profissionais comprometidos, criativos e com visão estratégica.
+                  A identidade visual criada para nossa startup foi essencial para
+                  nos posicionarmos no mercado. Recomendo sem pensar duas vezes!"
+                </p>
+                <cite class="cite__cliente"><strong>Marcos Tavares — Diretor de Marketing na StartUpHub</strong></cite>
+              </blockquote>
+              <blockquote class="depoimentos__blockquote">
+                <p class="depoimentos__p">
+                  "Eu não entendia nada de internet e estava insegura, mas a
+                  equipe da Criativa Web me acompanhou em cada etapa. Hoje tenho
+                  um site que transmite confiança e atrai mais pacientes. Sou
+                  muito grata!"
+                </p>
+                <cite class="cite__cliente"><strong>Renata Alves — Psicóloga Clínica</strong></cite>
+              </blockquote>
+            </div>
 
-            <blockquote class="depoimentos__blockquote">
-              <p class="depoimentos__p">
-                "Profissionais comprometidos, criativos e com visão estratégica.
-                A identidade visual criada para nossa startup foi essencial para
-                nos posicionarmos no mercado. Recomendo sem pensar duas vezes!"
-              </p>
-              <cite class="cite__cliente"><strong>Marcos Tavares — Diretor de Marketing na StartUpHub</strong></cite>
-            </blockquote>
-
-            <blockquote class="depoimentos__blockquote">
-              <p class="depoimentos__p">
-                "Eu não entendia nada de internet e estava insegura, mas a
-                equipe da Criativa Web me acompanhou em cada etapa. Hoje tenho
-                um site que transmite confiança e atrai mais pacientes. Sou
-                muito grata!"
-              </p>
-              <cite class="cite__cliente"><strong>Renata Alves — Psicóloga Clínica</strong></cite>
-            </blockquote>
         </div>
       </section>
 
@@ -200,38 +201,39 @@
       <section class="contato" id="contato">
         <div class="contato__container">
           <h2 class="section__title">Contato</h2>
-            <div class="contato__endereco">
-              <h3 class="contato__subtitle">Fale com a gente</h3>
-              <p class="section__p"><strong>Endereço:</strong> Rua das Ideias, 123 - São Paulo, SP</p>
-              <p class="section__p"><strong>Telefone:</strong> (11) 01234-5678</p>
-              <p class="section__p"><strong>E-mail:</strong> contato@criativaweb.com.br</p>
+            <div class="enderecoeform__container">
+              <div class="contato__endereco">
+                <h3 class="contato__subtitle">Fale com a gente</h3>
+                <p class="contato__p"><strong>Endereço:</strong> Rua Ideias, 123 - São Paulo, SP</p>
+                <p class="contato__p"><strong>Telefone:</strong> (11) 01234-5678</p>
+                <p class="contato__p"><strong>E-mail:</strong> contato@criativaweb.com.br</p>
+              </div>
+              
+                        <form action="#" method="post" id="formulario" class="contato__formulario">
+              <h3 class="contato__subtitle">Envie uma mensagem</h3>
+              <div class="contato__campo">
+                <label class="contato__label" for="nome">* Nome:</label>
+                <input class="contato__input" type="text" id="nome" name="nome" required />
+              </div>
+              <div class="contato__campo">
+                <label class="contato__label" for="email" class="contato__label">* E-mail:</label>
+                <input class="contato__input"type="email" id="email" name="email" required />
+              </div>
+              <div class="contato__campo">
+                <label class="contato__label" for="mensagem">* Mensagem:</label> <br>
+                <textarea
+                  class="contato__input"
+                  name="mensagem"
+                  id="mensagem"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="contato__botao">Enviar</button>
+              
+              </form>
             </div>
 
-          <form action="#" method="post" id="formulario" class="contato__formulario">
-            <h3 class="contato__subtitle">Envie uma mensagem</h3>
-
-            <div class="contato__campo">
-              <label class="contato__label" for="nome">* Nome:</label>
-              <input class="contato__input" type="text" id="nome" name="nome" required />
-            </div>
-
-            <div class="contato__campo">
-              <label class="contato__label" for="email" class="contato__label">* E-mail:</label>
-              <input class="contato__input"type="email" id="email" name="email" required />
-            </div>
-
-            <div class="contato__campo">
-              <label class="contato__label" for="mensagem">Mensagem:</label>
-              <textarea
-                name="mensagem"
-                id="mensagem"
-                rows="5"
-                required
-              ></textarea>
-            </div>
-
-            <button type="submit" class="contato__botao">Enviar</button>
-          </form>
         </div>
       </section>
     </main>
@@ -246,18 +248,18 @@
             </p>
           </div>
           <div class="footer__linksredes">
-            <p>Siga a gente:</p>
-            <a href="https://www.instagram.com" target="_blank">
+            <p class="footer__p">Siga a gente:</p>
+            <a class="footer__redessociais" href="https://www.instagram.com" target="_blank">
               <i class="fab fa-instagram"></i>
             </a>
-            <a href="https://www.linkedin.com" target="_blank">
+            <a class="footer__redessociais" href="https://www.linkedin.com" target="_blank">
               <i class="fab fa-linkedin"></i>
             </a>
-            <a href="https://www.facebook.com" target="_blank">
+            <a class="footer__redessociais" href="https://www.facebook.com" target="_blank">
               <i class="fab fa-facebook"></i>
             </a>
           </div>
-          <div class="footer__politicaTermos">
+          <div class="footer__politicatermos">
               <a href="#" class="footer__link">Política de Privacidade</a> |
               <a href="#" class="footer__link">Termos de uso</a>
           </div>
