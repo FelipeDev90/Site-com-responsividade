@@ -1,0 +1,46 @@
+@use "../base/fonts";
+
+/*FONTES*/
+$title-font: "Megrin", cursive;
+$text-font: "RobotoCondensed", cursive;
+
+/*CORES*/
+$cor0: transparent;
+$cor1: #2b3033;
+$cor2: #354750;
+$cor3: #3d657a;
+$cor4: #377ea5;
+$cor5: #2393cf;
+$cor6: #00a4fa;
+$cor7: #fff;
+
+/*SOMBRAS*/
+$title-shadow: 0.2px 0.2px 2px $cor6;
+$text-shadow: 0.2px 0.2px 2px $cor3;
+$box-shadow1: 1px 1px 10px $cor1;
+$box-shadow2: 0.5px 0.5px 5px $cor1;
+
+/*TAMAHO DAS FONTES*/
+$font-xl: 6em;
+$font-l: 2.5em;
+$font-m: 1.5em;
+$font-s: 1.2em;
+
+/*ESPAÇAMENTO DE LINHA*/
+$line-height-base: 1.5;
+
+/*DEGRADE DAS LINHAS*/
+$gradient-linear: linear-gradient(to right, $cor2 0%, $cor5 50%, $cor2 100%);
+$gradient-radial1: radial-gradient(circle, $cor0 0%, $cor3 100%);
+$gradient-radial2: radial-gradient(circle, $cor0 20%, $cor2 300%);
+
+/*BORDAS*/
+$border-radius: 10px;
+
+/*ESPAÇAMENTOS*/
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 32px;
+$spacing-xxl: 48px;

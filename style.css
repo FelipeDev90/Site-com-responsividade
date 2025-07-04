@@ -1,3 +1,4 @@
+
 @charset "UTF-8";
 
 * {
@@ -57,7 +58,7 @@ body {
   text-align: center;
   flex-wrap: wrap;
   height: 100vh;
-  background-image: url("imagens/wallpaper1.jpg");
+  background-image: url("image/wallpaper1.jpg");
   background-position: center center;
   background-size: cover;
 }
@@ -128,7 +129,7 @@ body {
 }
 
 .homesobrenos__container {
-  background: url("imagens/wallpaper006.jpg");
+  background: url("image/wallpaper006.jpg");
   background-position: top center;
   background-size: cover;
 }
@@ -246,7 +247,7 @@ body {
   padding: 10px;
   box-shadow: 0.5px 0.5px 5px var(--cor1);
 
-  background: url("imagens/wallpaper1.jpg");
+  background: url("image/wallpaper1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -264,14 +265,14 @@ body {
   text-align: center;
   flex-wrap: wrap;
   padding-bottom: 10px;
-  background: url("imagens/wallpaper1.jpg");
+  background: url("image/wallpaper1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   min-height: 100%;
 }
 
-.blockquote__container {
+.depoimentos__containerblockquote {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;

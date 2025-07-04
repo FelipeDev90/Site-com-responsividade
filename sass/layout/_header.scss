@@ -1,0 +1,33 @@
+@use "../utils/variables";
+
+.header {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    background-image: url("../../image/wallpaper1.jpg");
+    background-position: center center;
+    background-size: cover;
+  }
+
+  &__title {
+    font-family: variables.$title-font;
+    font-size: variables.$font-xl;
+    font-weight: bold;
+    text-shadow: variables.$title-shadow;
+    max-width: 100%;
+    transition: all 0.8s ease;
+  }
+
+  &__subtitle {
+    font-family: variables.$text-font;
+    font-size: variables.$font-m;
+    text-shadow: variables.$text-shadow;
+    padding: 0 5px;
+    transition: all 0.8s ease;
+  }
+}

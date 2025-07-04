@@ -1,0 +1,80 @@
+@use "../utils/variables";
+
+.contato {
+  &__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: variables.$spacing-lg;
+  }
+
+  &__title {
+    font-family: variables.$title-font;
+    font-size: variables.$font-l;
+    text-shadow: variables.$text-shadow;
+    padding: variables.$spacing-sm;
+  }
+
+  &__containerform {
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-radius: variables.$border-radius;
+    background: variables.$gradient-radial2;
+    padding: 30px 0;
+  }
+
+  &__subtitle {
+    font-family: variables.$text-font;
+    font-size: variables.$font-m;
+    text-shadow: variables.$text-shadow;
+    padding: 0 5px;
+  }
+
+  &__endereco {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px 0;
+  }
+
+  &__p {
+    font-family: variables.$text-font;
+    font-size: variables.$font-s;
+    text-align: justify;
+    align-items: center;
+    line-height: variables.$line-height-base;
+    padding: 2px;
+  }
+
+  &__label {
+    font-family: variables.$text-font;
+    font-size: variables.$font-s;
+  }
+
+  &__campo {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: variables.$spacing-md;
+  }
+
+  &__input {
+    font-family: variables.$text-font;
+    width: 100%;
+    font-size: 1em;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid variables.$cor1;
+    background-color: variables.$cor0;
+    transition: border-color 0.3s;
+  }
+
+  &__input:focus {
+    border-bottom: 2px solid variables.$cor1;
+  }
+}

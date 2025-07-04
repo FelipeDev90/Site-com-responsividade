@@ -1,0 +1,35 @@
+@use "../utils/variables";
+
+.homesobrenos {
+  &__container {
+    background: url("../../image/wallpaper2.jpg");
+    background-position: top center;
+    background-size: cover;
+  }
+}
+
+.home {
+  &__container {
+    height: 40vh;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  &__title {
+    font-family: variables.$title-font;
+    font-size: variables.$font-l;
+    text-shadow: variables.$text-shadow;
+    padding: variables.$spacing-sm;
+  }
+
+  &__subtitle {
+    font-family: variables.$text-font;
+    font-size: variables.$font-m;
+    text-shadow: variables.$text-shadow;
+    padding: 0 5px;
+  }
+}

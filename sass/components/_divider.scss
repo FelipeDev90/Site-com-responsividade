@@ -1,0 +1,10 @@
+@use "../utils/variables";
+
+.section__hr {
+    height: variables.$spacing-xs;
+    background: variables.$gradient-linear;
+    border: none;
+    width: 80%;
+    margin: variables.$spacing-xxl auto;
+    border-radius: variables.$border-radius;
+}

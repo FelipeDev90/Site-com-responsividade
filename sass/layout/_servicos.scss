@@ -1,0 +1,66 @@
+@use "../utils/variables";
+
+.servicos {
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: variables.$spacing-lg;
+  }
+
+  &__title {
+    font-family: variables.$title-font;
+    font-size: variables.$font-l;
+    text-shadow: variables.$text-shadow;
+    padding: variables.$spacing-sm;
+  }
+
+  &__subtitle {
+    font-family: variables.$text-font;
+    font-size: variables.$font-m;
+    text-shadow: variables.$text-shadow;
+    padding: 0 5px;
+  }
+
+  &__p {
+    font-family: variables.$text-font;
+    font-size: variables.$font-s;
+    text-align: center;
+    line-height: variables.$line-height-base;
+    padding: 20px 0;
+  }
+
+  &__lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: 100%;
+    max-width: 97%;
+    gap: variables.$spacing-lg;
+    padding: variables.$spacing-md;
+    border-radius: variables.$border-radius;
+    box-shadow: variables.$box-shadow1;
+    background: variables.$gradient-radial1;
+  }
+
+  &__li {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    list-style: none;
+    padding: variables.$spacing-sm;
+    border-radius: variables.$border-radius;
+    box-shadow: variables.$box-shadow2;
+
+    background: url("../../image/wallpaper1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__li:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 40px variables.$cor1;
+  }
+}

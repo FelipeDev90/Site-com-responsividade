@@ -1,0 +1,61 @@
+@use "../utils/variables";
+
+.depoimentos {
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+    padding-bottom: variables.$spacing-sm;
+
+    background: url("../../image/wallpaper1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100%;
+  }
+
+  &__title {
+    font-family: variables.$title-font;
+    font-size: variables.$font-l;
+    text-shadow: variables.$text-shadow;
+    padding: variables.$spacing-sm;
+  }
+
+  &__containerblockquote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: variables.$spacing-lg;
+    padding-bottom: variables.$spacing-lg;
+  }
+
+  &__p {
+    font-family: variables.$text-font;
+    font-size: variables.$font-s;
+    justify-content: center;
+    text-align: center;
+    line-height: variables.$line-height-base;
+    padding: 20px 0;
+  }
+
+  &__blockquote {
+    max-width: 60%;
+    background-color: variables.$cor0;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: variables.$spacing-sm;
+  }
+}
+
+.cite__cliente {
+  font-family: variables.$text-font;
+  font-size: variables.$font-s;
+  line-height: variables.$line-height-base;
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+}

@@ -1,0 +1,50 @@
+@use "../utils/variables";
+
+.sobrenos {
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    text-align: center;
+    max-width: 100%;
+    padding: 20px 50px;
+  }
+
+  &__imgcontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: variables.$spacing-xl;
+    padding: 20px 0;
+  }
+
+  &__title {
+    font-family: variables.$title-font;
+    font-size: variables.$font-l;
+    text-shadow: variables.$text-shadow;
+    padding: variables.$spacing-sm;
+  }
+
+  &__p {
+    font-family: variables.$text-font;
+    font-size: variables.$font-s;
+    flex: 2 1 500px;
+    text-align: justify;
+    text-indent: variables.$spacing-xxl;
+    line-height: variables.$line-height-base;
+    padding: 0 20px;
+  }
+
+  &__picture {
+    max-width: 600px;
+  }
+
+  &__imagem {
+    width: 100%;
+    height: auto;
+    border-radius: 1000px;
+  }
+}
