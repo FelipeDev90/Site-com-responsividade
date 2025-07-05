@@ -6,9 +6,7 @@
     @include mixins.flex-center(column);
     text-align: center;
     height: 100vh;
-    background-image: url("../../image/wallpaper1.jpg");
-    background-position: center center;
-    background-size: cover;
+    @include mixins.background-responsive("wallpaper1");
   }
 
   &__title {
@@ -24,7 +22,7 @@
     font-family: variables.$text-font;
     font-size: variables.$font-m;
     text-shadow: variables.$text-shadow;
-    padding: 0 5px;
+    padding: variables.$spacing-right-left;
     transition: all 0.8s ease;
   }
 }

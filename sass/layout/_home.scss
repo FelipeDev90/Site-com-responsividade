@@ -3,9 +3,7 @@
 
 .homesobrenos {
   &__container {
-    background: url("../../image/wallpaper2.jpg");
-    background-position: top center;
-    background-size: cover;
+    @include mixins.background-responsive("wallpaper2", center top);
   }
 }
 
@@ -28,6 +26,6 @@
     font-family: variables.$text-font;
     font-size: variables.$font-m;
     text-shadow: variables.$text-shadow;
-    padding: 0 5px;
+    padding: variables.$spacing-right-left;
   }
 }

@@ -22,12 +22,6 @@ body {
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
-  font-family: "Savate";
-  src: url("font/Savate-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
 /*FONTES*/
 /*CORES*/
 /*SOMBRAS*/
@@ -36,6 +30,7 @@ body {
 /*DEGRADE DAS LINHAS*/
 /*BORDAS*/
 /*ESPAÇAMENTOS*/
+/*BREAKPOINTS*/
 .header__container {
   display: flex;
   justify-content: center;
@@ -44,9 +39,9 @@ body {
   flex-wrap: wrap;
   text-align: center;
   height: 100vh;
-  background-image: url("../../image/wallpaper1.jpg");
-  background-position: center center;
+  background: url("../../image/wallpaper1.jpg");
   background-size: cover;
+  background-position: center center;
 }
 .header__title {
   font-family: "Megrin", cursive;
@@ -102,8 +97,8 @@ body {
 
 .homesobrenos__container {
   background: url("../../image/wallpaper2.jpg");
-  background-position: top center;
   background-size: cover;
+  background-position: center top;
 }
 
 .home__container {
@@ -197,7 +192,7 @@ body {
 .servicos__p {
   font-family: "RobotoCondensed", cursive;
   font-size: 1.2em;
-  max-width: 50%;
+  max-width: 70%;
   text-align: center;
   line-height: 1.5;
   padding: 20px 0;
@@ -225,6 +220,7 @@ body {
   box-shadow: 0.5px 0.5px 5px #2b3033;
   background: url("../../image/wallpaper1.jpg");
   background-size: cover;
+  background-position: left center;
   background-repeat: no-repeat;
 }
 .servicos__li:hover {
@@ -242,7 +238,7 @@ body {
   padding-bottom: 8px;
   background: url("../../image/wallpaper1.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   min-height: 100%;
 }

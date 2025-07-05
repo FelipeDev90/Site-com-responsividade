@@ -1,7 +1,29 @@
 @mixin flex-center($direction: row, $wrap: wrap) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: $direction;
-    flex-wrap: $wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+}
+
+@mixin background-responsive($nome-imagem, $position: center center) {
+  background: url("../../image/#{$nome-imagem}.jpg");
+  background-size: cover;
+  background-position: $position;
+}
+
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == sm {
+    @media (max-width: 480px) {
+      @content;
+    }
+  } @else if $breakpoint == md {
+    @media (max-width: 768px) {
+      @content;
+    }
+  } @else if $breakpoint == lg {
+    @media (max-width: 1024px) {
+      @content;
+    }
+  }
 }

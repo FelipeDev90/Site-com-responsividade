@@ -19,16 +19,16 @@
     font-family: variables.$text-font;
     font-size: variables.$font-m;
     text-shadow: variables.$text-shadow;
-    padding: 0 5px;
+    padding: variables.$spacing-right-left;
   }
 
   &__p {
     font-family: variables.$text-font;
     font-size: variables.$font-s;
-    max-width: 50%;
+    max-width: 70%;
     text-align: center;
     line-height: variables.$line-height-base;
-    padding: 20px 0;
+    padding: variables.$spacing-top-bottom;
   }
 
   &__lista {
@@ -50,8 +50,7 @@
     border-radius: variables.$border-radius;
     box-shadow: variables.$box-shadow2;
 
-    background: url("../../image/wallpaper1.jpg");
-    background-size: cover;
+    @include mixins.background-responsive("wallpaper1", left center);
     background-repeat: no-repeat;
   }
 
