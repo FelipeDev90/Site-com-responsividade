@@ -26,11 +26,11 @@ body {
 /*CORES*/
 /*SOMBRAS*/
 /*TAMAHO DAS FONTES*/
+/*BREAKPOINTS*/
 /*ESPAÇAMENTO DE LINHA*/
 /*DEGRADE DAS LINHAS*/
 /*BORDAS*/
 /*ESPAÇAMENTOS*/
-/*BREAKPOINTS*/
 .header__container {
   display: flex;
   justify-content: center;
@@ -39,7 +39,7 @@ body {
   flex-wrap: wrap;
   text-align: center;
   height: 100vh;
-  background: url("../../image/wallpaper1.jpg");
+  background: url("../image/wallpaper1.jpg");
   background-size: cover;
   background-position: center center;
 }
@@ -51,12 +51,32 @@ body {
   max-width: 100%;
   transition: all 0.8s ease;
 }
+@media (max-width: 1024px) {
+  .header__title {
+    font-size: 4.5em;
+  }
+}
+@media (max-width: 768px) {
+  .header__title {
+    font-size: 3.5em;
+  }
+}
+@media (max-width: 480px) {
+  .header__title {
+    font-size: 3em;
+  }
+}
 .header__subtitle {
   font-family: "RobotoCondensed", cursive;
   font-size: 1.5em;
   text-shadow: 0.2px 0.2px 2px #3d657a;
   padding: 0 5px;
   transition: all 0.8s ease;
+}
+@media (max-width: 480px) {
+  .header__subtitle {
+    font-size: 1.2em;
+  }
 }
 
 .nav__container {
@@ -96,7 +116,7 @@ body {
 }
 
 .homesobrenos__container {
-  background: url("../../image/wallpaper2.jpg");
+  background: url("../image/wallpaper2.jpg");
   background-size: cover;
   background-position: center top;
 }
@@ -118,11 +138,21 @@ body {
   text-shadow: 0.2px 0.2px 2px #3d657a;
   padding: 8px;
 }
+@media (max-width: 480px) {
+  .home__title {
+    font-size: 2em;
+  }
+}
 .home__subtitle {
   font-family: "RobotoCondensed", cursive;
   font-size: 1.5em;
   text-shadow: 0.2px 0.2px 2px #3d657a;
   padding: 0 5px;
+}
+@media (max-width: 480px) {
+  .home__subtitle {
+    font-size: 1.2em;
+  }
 }
 
 .sobrenos__container {
@@ -149,6 +179,11 @@ body {
   font-size: 2.5em;
   text-shadow: 0.2px 0.2px 2px #3d657a;
   padding: 8px;
+}
+@media (max-width: 480px) {
+  .sobrenos__title {
+    font-size: 2em;
+  }
 }
 .sobrenos__p {
   font-family: "RobotoCondensed", cursive;
@@ -183,11 +218,21 @@ body {
   text-shadow: 0.2px 0.2px 2px #3d657a;
   padding: 8px;
 }
+@media (max-width: 480px) {
+  .servicos__title {
+    font-size: 2em;
+  }
+}
 .servicos__subtitle {
   font-family: "RobotoCondensed", cursive;
   font-size: 1.5em;
   text-shadow: 0.2px 0.2px 2px #3d657a;
   padding: 0 5px;
+}
+@media (max-width: 480px) {
+  .servicos__subtitle {
+    font-size: 1.2em;
+  }
 }
 .servicos__p {
   font-family: "RobotoCondensed", cursive;
@@ -218,7 +263,7 @@ body {
   padding: 8px;
   border-radius: 10px;
   box-shadow: 0.5px 0.5px 5px #2b3033;
-  background: url("../../image/wallpaper1.jpg");
+  background: url("../image/wallpaper1.jpg");
   background-size: cover;
   background-position: left center;
   background-repeat: no-repeat;
@@ -236,7 +281,7 @@ body {
   flex-wrap: wrap;
   text-align: center;
   padding-bottom: 8px;
-  background: url("../../image/wallpaper1.jpg");
+  background: url("../image/wallpaper1.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -247,6 +292,11 @@ body {
   font-size: 2.5em;
   text-shadow: 0.2px 0.2px 2px #3d657a;
   padding: 8px;
+}
+@media (max-width: 480px) {
+  .depoimentos__title {
+    font-size: 2em;
+  }
 }
 .depoimentos__containerblockquote {
   display: flex;
@@ -295,6 +345,11 @@ body {
   text-shadow: 0.2px 0.2px 2px #3d657a;
   padding: 8px;
 }
+@media (max-width: 480px) {
+  .contato__title {
+    font-size: 2em;
+  }
+}
 .contato__containerform {
   width: 100vw;
   max-width: 100%;
@@ -310,6 +365,11 @@ body {
   font-size: 1.5em;
   text-shadow: 0.2px 0.2px 2px #3d657a;
   padding: 0 5px;
+}
+@media (max-width: 480px) {
+  .contato__subtitle {
+    font-size: 1.2em;
+  }
 }
 .contato__endereco {
   display: flex;
@@ -382,6 +442,11 @@ body {
   text-shadow: 0.2px 0.2px 2px #3d657a;
   padding: 4px;
   transition: transform 0.3s ease;
+}
+@media (max-width: 480px) {
+  .footer__redessociais {
+    font-size: 1.2em;
+  }
 }
 .footer__redessociais:hover, .footer__link:hover {
   transform: scale(1.4);
