@@ -34,6 +34,12 @@
     text-indent: variables.$spacing-xxl;
     line-height: variables.$line-height-base;
     padding: 0 20px;
+
+    @include mixins.respond-to(sm) {
+      flex: 1 1 250px;
+      width: 100%;
+      padding: 0 10px;
+    }
   }
 
   &__picture {

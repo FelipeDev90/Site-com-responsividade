@@ -194,6 +194,13 @@ body {
   line-height: 1.5;
   padding: 0 20px;
 }
+@media (max-width: 480px) {
+  .sobrenos__p {
+    flex: 1 1 250px;
+    width: 100%;
+    padding: 0 10px;
+  }
+}
 .sobrenos__picture {
   max-width: 600px;
 }
@@ -433,6 +440,11 @@ body {
   font-size: 1.2em;
   line-height: 1.2;
   text-decoration: none;
+}
+@media (max-width: 480px) {
+  .footer__p, .footer__link {
+    text-align: center;
+  }
 }
 .footer__redessociais {
   display: inline-block;

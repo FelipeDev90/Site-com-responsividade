@@ -29,6 +29,10 @@
     line-height: 1.2;
 
     text-decoration: none;
+
+    @include mixins.respond-to(sm) {
+      text-align: center;
+    }
   }
 
   &__redessociais {
