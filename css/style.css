@@ -39,7 +39,7 @@ body {
   flex-wrap: wrap;
   text-align: center;
   height: 100vh;
-  background: url("/agencia_criativa_web/image/wallpaper1.jpg");
+  background: url("../image/wallpaper1.jpg");
   background-size: cover;
   background-position: center center;
 }
@@ -116,7 +116,7 @@ body {
 }
 
 .homesobrenos__container {
-  background: url("/agencia_criativa_web/image/wallpaper2.jpg");
+  background: url("../image/wallpaper2.jpg");
   background-size: cover;
   background-position: center top;
 }
@@ -263,7 +263,7 @@ body {
   padding: 8px;
   border-radius: 10px;
   box-shadow: 0.5px 0.5px 5px #2b3033;
-  background: url("/agencia_criativa_web/image/wallpaper1.jpg");
+  background: url("../image/wallpaper1.jpg");
   background-size: cover;
   background-position: left center;
   background-repeat: no-repeat;
@@ -281,7 +281,7 @@ body {
   flex-wrap: wrap;
   text-align: center;
   padding-bottom: 8px;
-  background: url("/agencia_criativa_web/image/wallpaper1.jpg");
+  background: url("../image/wallpaper1.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
