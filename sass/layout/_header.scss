@@ -16,6 +16,18 @@
     text-shadow: variables.$title-shadow;
     max-width: 100%;
     transition: all 0.8s ease;
+
+    @include mixins.respond-to(lg) {
+      font-size: 4.5em;
+    }
+
+    @include mixins.respond-to(md) {
+      font-size: 3.5em;
+    }
+
+    @include mixins.respond-to(sm) {
+      font-size: 3em;
+    }
   }
 
   &__subtitle {
@@ -24,5 +36,9 @@
     text-shadow: variables.$text-shadow;
     padding: variables.$spacing-right-left;
     transition: all 0.8s ease;
+
+    @include mixins.respond-to(sm) {
+      font-size: 1.2em;
+    }
   }
 }

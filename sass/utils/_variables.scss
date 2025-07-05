@@ -26,6 +26,11 @@ $font-l: 2.5em;
 $font-m: 1.5em;
 $font-s: 1.2em;
 
+/*BREAKPOINTS*/
+$breakpoint-sm: 480px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+
 /*ESPAÇAMENTO DE LINHA*/
 $line-height-base: 1.5;
 
@@ -48,7 +53,4 @@ $spacing-xxl: 48px;
 $spacing-top-bottom: 20px 0;
 $spacing-right-left: 0 5px;
 
-/*BREAKPOINTS*/
-$breakpoint-sm: 480px;
-$breakpoint-md: 768px;
-$breakpoint-lg: 1024px;
+

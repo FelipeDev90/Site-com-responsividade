@@ -12,6 +12,10 @@
     font-size: variables.$font-l;
     text-shadow: variables.$text-shadow;
     padding: variables.$spacing-sm;
+
+    @include mixins.respond-to(sm) {
+      font-size: 2em;
+    }
   }
 
   &__containerform {
@@ -30,6 +34,10 @@
     font-size: variables.$font-m;
     text-shadow: variables.$text-shadow;
     padding: 0 5px;
+
+    @include mixins.respond-to(sm) {
+      font-size: 1.2em;
+    }
   }
 
   &__endereco {

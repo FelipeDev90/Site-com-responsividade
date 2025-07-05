@@ -15,17 +15,25 @@
     @include mixins.flex-center(column);
     text-align: center;
   }
+
   &__title {
     font-family: variables.$title-font;
     font-size: variables.$font-l;
     text-shadow: variables.$text-shadow;
     padding: variables.$spacing-sm;
-  }
 
+    @include mixins.respond-to(sm) {
+      font-size: 2em;
+    }
+  }
   &__subtitle {
     font-family: variables.$text-font;
     font-size: variables.$font-m;
     text-shadow: variables.$text-shadow;
     padding: variables.$spacing-right-left;
+
+    @include mixins.respond-to(sm) {
+      font-size: 1.2em;
+    }
   }
 }

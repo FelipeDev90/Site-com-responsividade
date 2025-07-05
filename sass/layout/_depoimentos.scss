@@ -17,6 +17,10 @@
     font-size: variables.$font-l;
     text-shadow: variables.$text-shadow;
     padding: variables.$spacing-sm;
+
+    @include mixins.respond-to(sm) {
+      font-size: 2em;
+    }
   }
 
   &__containerblockquote {

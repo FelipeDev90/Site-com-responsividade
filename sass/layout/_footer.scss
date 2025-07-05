@@ -38,6 +38,10 @@
     text-shadow: variables.$text-shadow;
     padding: variables.$spacing-xs;
     transition: transform 0.3s ease;
+
+    @include mixins.respond-to(sm) {
+      font-size: 1.2em;
+    }
   }
 
   &__redessociais:hover,
