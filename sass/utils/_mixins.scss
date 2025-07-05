@@ -7,7 +7,7 @@
 }
 
 @mixin background-responsive($nome-imagem, $position: center center) {
-  background: url("/agencia_criativa_web/image/#{$nome-imagem}.jpg");
+  background: url("../image/#{$nome-imagem}.jpg");
   background-size: cover;
   background-position: $position;
 }
