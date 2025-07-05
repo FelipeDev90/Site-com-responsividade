@@ -38,11 +38,11 @@ body {
 /*ESPAÇAMENTOS*/
 .header__container {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  flex-direction: column;
   flex-wrap: wrap;
+  text-align: center;
   height: 100vh;
   background-image: url("../../image/wallpaper1.jpg");
   background-position: center center;
@@ -71,6 +71,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
   flex-wrap: wrap;
   padding: 5px 10px;
   position: sticky;
@@ -113,6 +114,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  flex-wrap: wrap;
   text-align: center;
 }
 .home__title {
@@ -132,16 +134,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: column wrap;
+  flex-direction: column;
+  flex-wrap: wrap;
   text-align: center;
   max-width: 100%;
   padding: 20px 50px;
 }
 .sobrenos__imgcontainer {
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: row;
   flex-wrap: wrap;
   gap: 32px;
   padding: 20px 0;
@@ -175,6 +178,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  flex-wrap: wrap;
   text-align: center;
   padding-bottom: 24px;
 }
@@ -193,6 +197,7 @@ body {
 .servicos__p {
   font-family: "RobotoCondensed", cursive;
   font-size: 1.2em;
+  max-width: 50%;
   text-align: center;
   line-height: 1.5;
   padding: 20px 0;
@@ -211,8 +216,9 @@ body {
 .servicos__li {
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   flex-direction: column;
+  flex-wrap: wrap;
   list-style: none;
   padding: 8px;
   border-radius: 10px;
@@ -231,8 +237,8 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  text-align: center;
   flex-wrap: wrap;
+  text-align: center;
   padding-bottom: 8px;
   background: url("../../image/wallpaper1.jpg");
   background-size: cover;
@@ -250,14 +256,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 24px;
   padding-bottom: 24px;
 }
 .depoimentos__p {
   font-family: "RobotoCondensed", cursive;
   font-size: 1.2em;
-  justify-content: center;
   text-align: center;
   line-height: 1.5;
   padding: 20px 0;
@@ -282,8 +288,9 @@ body {
 .contato__container {
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   padding-bottom: 24px;
 }
 .contato__title {
@@ -310,8 +317,8 @@ body {
 }
 .contato__endereco {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
   padding: 20px 0;
@@ -347,6 +354,44 @@ body {
   border-bottom: 2px solid #2b3033;
 }
 
+.footer__container {
+  width: 100%;
+  height: fit-content;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  background-color: #354750;
+  padding: 10px 40px;
+}
+.footer__linksrede {
+  padding: 8px;
+}
+.footer__p, .footer__link {
+  font-family: "RobotoCondensed", cursive;
+  font-weight: 500;
+  text-align: start;
+  color: black;
+  font-size: 1.2em;
+  line-height: 1.2;
+  text-decoration: none;
+}
+.footer__redessociais {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: black;
+  text-shadow: 0.2px 0.2px 2px #3d657a;
+  padding: 4px;
+  transition: transform 0.3s ease;
+}
+.footer__redessociais:hover, .footer__link:hover {
+  transform: scale(1.4);
+  color: #377ea5;
+}
+
 .section__hr {
   height: 4px;
   background: linear-gradient(to right, #354750 0%, #2393cf 50%, #354750 100%);
@@ -354,6 +399,29 @@ body {
   width: 80%;
   margin: 48px auto;
   border-radius: 10px;
+}
+
+.contato__botao {
+  display: inline-block;
+  width: fit-content;
+  background-color: #354750;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  margin-top: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.contato__botao:hover {
+  background-color: #3d657a;
+}
+.contato__botao:active {
+  transform: scale(1.05);
+}
+.contato__botao:focus {
+  outline: none;
+  box-shadow: 0 0 0 2.5px #354750;
 }
 
 /*# sourceMappingURL=main.css.map */

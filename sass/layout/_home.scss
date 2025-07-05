@@ -1,4 +1,5 @@
 @use "../utils/variables";
+@use "../utils/mixins";
 
 .homesobrenos {
   &__container {
@@ -13,10 +14,7 @@
     height: 40vh;
     width: 100%;
     max-width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    @include mixins.flex-center(column);
     text-align: center;
   }
   &__title {

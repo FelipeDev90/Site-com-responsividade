@@ -1,11 +1,9 @@
 @use "../utils/variables";
+@use "../utils/mixins";
 
 .servicos {
   &__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    @include mixins.flex-center(column);
     text-align: center;
     padding-bottom: variables.$spacing-lg;
   }
@@ -27,6 +25,7 @@
   &__p {
     font-family: variables.$text-font;
     font-size: variables.$font-s;
+    max-width: 50%;
     text-align: center;
     line-height: variables.$line-height-base;
     padding: 20px 0;
@@ -45,10 +44,7 @@
   }
 
   &__li {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
+    @include mixins.flex-center(column);
     list-style: none;
     padding: variables.$spacing-sm;
     border-radius: variables.$border-radius;

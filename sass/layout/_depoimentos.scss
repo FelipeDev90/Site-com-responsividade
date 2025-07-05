@@ -1,13 +1,10 @@
 @use "../utils/variables";
+@use "../utils/mixins";
 
 .depoimentos {
   &__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    @include mixins.flex-center(column);
     text-align: center;
-    flex-wrap: wrap;
     padding-bottom: variables.$spacing-sm;
 
     background: url("../../image/wallpaper1.jpg");
@@ -25,10 +22,7 @@
   }
 
   &__containerblockquote {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
+    @include mixins.flex-center;
     gap: variables.$spacing-lg;
     padding-bottom: variables.$spacing-lg;
   }
@@ -36,7 +30,6 @@
   &__p {
     font-family: variables.$text-font;
     font-size: variables.$font-s;
-    justify-content: center;
     text-align: center;
     line-height: variables.$line-height-base;
     padding: 20px 0;

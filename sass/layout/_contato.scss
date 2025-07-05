@@ -1,11 +1,9 @@
 @use "../utils/variables";
+@use "../utils/mixins";
 
 .contato {
   &__container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    @include mixins.flex-center;
     padding-bottom: variables.$spacing-lg;
   }
 
@@ -35,11 +33,7 @@
   }
 
   &__endereco {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
+    @include mixins.flex-center(column);
     padding: 20px 0;
   }
 

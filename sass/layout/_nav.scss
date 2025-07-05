@@ -1,14 +1,12 @@
 @use "../utils/variables";
+@use "../utils/mixins";
 
 .nav {
   &__container {
     background-color: variables.$cor2;
     font-family: variables.$title-font;
     font-size: variables.$font-s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    @include mixins.flex-center;
     padding: 5px 10px;
     position: sticky;
     top: 0;

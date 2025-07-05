@@ -1,0 +1,29 @@
+@use "../utils/variables";
+
+.contato {
+  &__botao {
+    display: inline-block;
+    width: fit-content;
+    background-color: variables.$cor2;
+    color: variables.$cor7;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    margin-top: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  &__botao:hover {
+    background-color: variables.$cor3;
+  }
+
+  &__botao:active {
+    transform: scale(1.05);
+  }
+
+  &__botao:focus {
+    outline: none;
+    box-shadow: 0 0 0 2.5px variables.$cor2;
+  }
+}

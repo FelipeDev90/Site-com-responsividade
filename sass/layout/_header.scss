@@ -1,13 +1,10 @@
 @use "../utils/variables";
+@use "../utils/mixins";
 
 .header {
   &__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include mixins.flex-center(column);
     text-align: center;
-    flex-wrap: wrap;
     height: 100vh;
     background-image: url("../../image/wallpaper1.jpg");
     background-position: center center;

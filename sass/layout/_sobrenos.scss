@@ -1,22 +1,16 @@
 @use "../utils/variables";
+@use "../utils/mixins";
 
 .sobrenos {
   &__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column wrap;
+    @include mixins.flex-center(column);
     text-align: center;
     max-width: 100%;
     padding: 20px 50px;
   }
 
   &__imgcontainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    @include mixins.flex-center;
     gap: variables.$spacing-xl;
     padding: 20px 0;
   }

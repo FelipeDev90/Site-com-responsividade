@@ -8,6 +8,10 @@
 @use "layout/sobrenos";
 @use "layout/servicos";
 @use "layout/depoimentos";
-@use "layout/_contato";
+@use "layout/contato";
+@use "layout/footer";
 
-@use "components/divider"
+@use "components/divider";
+@use "components/buttons";
+
+@use "utils/mixins";
